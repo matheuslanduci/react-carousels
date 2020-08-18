@@ -1,0 +1,171 @@
+h1 {
+  font-size: 48px;
+  line-height: 76px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  margin: 64px auto;
+  width: 960px;
+  height: 256px;
+  border: 1px solid #c1c1c1;
+}
+
+.slider-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  width: 64px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s all;
+  z-index: 99;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-left {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.arrow-left:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.arrow-left svg,
+.arrow-right svg {
+  width: 36px;
+  height: 48px;
+  fill: #fff;
+}
+
+.arrow-right {
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.arrow-right:hover {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.simple-carousel-container {
+  position: relative;
+  width: 100%;
+  height: 256px;
+}
+
+.simple-carousel {
+  margin: 64px auto;
+  width: 960px;
+  height: 256px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.simple-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.drag-carousel-container {
+  position: relative;
+  margin: 64px auto;
+  width: 960px;
+}
+
+.drag-carousel {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.drag-carousel-item {
+  flex: none;
+
+  width: 100%;
+  height: 400px;
+
+  pointer-events: none;
+  scroll-snap-align: start;
+}
+
+.drag-carousel-item img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.carousel-container {
+  position: relative;
+  margin: 64px auto;
+  width: 960px;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.carousel-items {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  flex: none;
+
+  width: 100%;
+  height: 400px;
+
+  pointer-events: none;
+  scroll-snap-align: start;
+}
